@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="bodyTop">
+    <!-- 導覽列 -->
+    <nav>
+        <a id="kerie" href="">kyrie</a>
+        <div>作品集</div>
+        <div class="nav_icon">
+            <a href="#work"><img src="./img/fb.png" alt=""></a>
+            <a href=""><img src="./img/yt.png" alt=""></a>
+            <a href=""><img src="./img/fb.png" alt=""></a>
+        </div>
+    </nav>
+    <!-- 倫波區塊 -->
+    <div id="slick">
+        <img src="./img/slick1.jpeg" alt="">
+        <img src="./img/slick2.jpeg" alt="">
+        <img src="./img/slick3.jpeg" alt="">
+        <img src="./img/slick4.jpeg" alt="">
+        <img src="./img/slick5.jpeg" alt="">
+    </div>
+
+    <!-- 關於我 -->
+    <div class="about">
+        <p style="font-size: 32px ; ">關於我</p>
+        <h1>Kyrie</h1>
+        <p class="about_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, ea.</p>
+        <a href="">關於我</a>
+    </div>
+
+    <!-- 作品集 -->
+    <div id="work" class="work_all">
+        <div class="work">
+            <p>作品集</p>
+            <div class="work_box">
+                <!-- 小卡片 -->
+                <div class="work_card">
+                    <img src="./img/slick1.jpeg" alt="">
+                    <span>類別-網頁</span>
+                    <p>作品集1</p>
+                </div>
+                <div class="work_card">
+                    <img src="./img/slick1.jpeg" alt="">
+                    <span>類別-網頁</span>
+                    <p>作品集1</p>
+                </div>
+                <div class="work_card">
+                    <img src="./img/slick1.jpeg" alt="">
+                    <span>類別-網頁</span>
+                    <p>作品集1</p>
+                </div>
+                <div class="work_card">
+                    <img src="./img/slick1.jpeg" alt="">
+                    <span>類別-網頁</span>
+                    <p>作品集1</p>
+                </div>
+                <div class="work_card">
+                    <img src="./img/slick1.jpeg" alt="">
+                    <span>類別-網頁</span>
+                    <p>作品集1</p>
+                </div>
+                <div class="work_card">
+                    <img src="./img/slick1.jpeg" alt="">
+                    <span>類別-網頁</span>
+                    <p>作品集1</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <span>Kyrie</span>
+        <div>
+            <img src="./img/fb.png" alt="">
+            <img src="./img/yt.png" alt="">
+            <img src="./img/fb.png" alt="">
+        </div>
+        <div>
+            <a href="#">關於我</a>
+            <a href="#">作品集</a>
+            <a href="#">聯絡我</a>
+        </div>
+        <p> &copy; 2021 KyrieHaveGoodDay </p>
+    </footer>
+
+    <img class="gotop" data-gt-target="#bodyTop" data-gt-duration="1000" data-gt-offset="300" src="./img/gotop.png"
+        alt="">
+
+    <!-- 除錯 -->
+    <!-- 1.錯字 -->
+    <!-- 2.開發者工具 -->
+    <!-- 3.邏輯 -->
+
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+    <!-- JS CDN -->
+    <script src="https://kyriehavegoodday.github.io/GoTo_Element/goto.js"></script>
+    <!--  slick cdn  -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        // 啟動輪播
+        $('#slick').slick({
+            autoplay: 2000,
+            dots: true
+        });
+        // CRUD
+        // C = 新增
+        // R = 讀取
+        // U = 更新
+        // D = 刪除
+    </script>
+</body>
+
+</html>

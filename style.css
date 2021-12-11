@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", cursive;
+}
+/* 導覽列 */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+
+    z-index: 1;
+    background: white;
+    box-shadow: 0 2px 2px #eee;
+}
+
+nav a {
+    font-size: 32px;
+    text-decoration: none;
+    color: #000;
+}
+.nav_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_icon a {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+}
+.nav_icon img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.nav_icon img:hover {
+    filter: invert(83%) sepia(66%) saturate(3242%) hue-rotate(177deg) brightness(102%) contrast(101%);
+}
+/* slick */
+#slick img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.box {
+    height: 100vh;
+}
+.slick-dots {
+    padding-bottom: 40px;
+}
+
+/* 關於我 */
+.about {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.about h1 {
+    font-size: 200px;
+}
+.about_p {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    margin: 50px 0;
+}
+.about a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px 60px;
+    transition: 0.5s;
+}
+.about a:hover {
+    background: #000;
+    color: white;
+}
+
+/* 作品集 */
+.work_all {
+    background: #eee;
+}
+.work {
+    width: 1200px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+.work > p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.work_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.work_card {
+    width: 370px;
+    /* border: 1px solid black; */
+}
+.work_card > img {
+    width: 100%;
+}
+.work_card > span {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.work_card > p {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+footer > div {
+    margin: 15px 0;
+}
+footer > span {
+    font-size: 50px;
+}
+footer > div > img {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+}
+footer > div > a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+footer > p {
+    letter-spacing: 2px;
+}
+
+/* gotop */
+.gotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    background: #fff;
+    border-radius: 50%;
+}
